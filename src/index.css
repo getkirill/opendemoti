@@ -29,6 +29,15 @@ main {
   background-color: black;
   color: white;
   font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.block > p:empty {
+  display: none;
+}
+.block > p {
+  display: inline-block;
 }
 
 p {
@@ -58,8 +67,4 @@ input::file-selector-button, button {
 
 .result {
   border: 2px solid red;
-}
-
-p:empty, p:has(:empty) {
-  display: none;
 }
