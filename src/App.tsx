@@ -62,8 +62,8 @@ function App() {
         <img src={result} className="result" /></>}
       <div className="block" ref={demotivatorRef}>
         <img src={img} />
-        <p className="big" contentEditable spellCheck={false}>DEMOTIVATOR TITLE</p>
-        <p contentEditable spellCheck={false}>DEMOTIVATOR DESCRIPTION</p>
+        <span className="t big" contentEditable spellCheck={false}>DEMOTIVATOR TITLE</span>
+        <span className="t" contentEditable spellCheck={false}>DEMOTIVATOR DESCRIPTION</span>
       </div>
     </main>
   )

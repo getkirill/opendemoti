@@ -31,16 +31,18 @@ main {
   font-family: 'Times New Roman', Times, serif;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.block > p:empty {
+.block > span.t:empty {
   display: none;
 }
-.block > p {
+.block > span.t {
   display: inline-block;
+  width: fit-content;
 }
 
-p {
+p, span.t {
   text-align: center;
   margin-top: 1rem;
 }
@@ -48,7 +50,7 @@ img {
   border: 1px white solid;
 }
 
-p.big {
+span.t.big {
   font-size: xx-large;
 }
 
